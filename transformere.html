@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Transformere</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Omsætningsforhold</h2>
+                        <p>
+                  
+                          \(U_1\) : spændingen på primærsiden af transformeren i \(V\) <br>
+                          \(U_2\) : spændingen på sekundærsiden af transformeren i \(V\) <br>
+                          \(I_1\) : strømmen på primærsiden af transformeren i \(A\) <br>
+                          \(I_2\) : strømmen på sekundærsiden af transformeren i \(A\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$n= \frac{U_1}{U_2} = \frac{I_2}{I_1}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Nominel ydeevne</h2>
+                        <p>
+                  
+                          \(S_N\) : tranformerens <span class="tooltip">nominelle ydeevne<span class="tooltiptext">den tilsynladende effekt transformeren har kapacitet til at overføre i vindingerne</span></span> i \(KVA\) <br>
+                          \(U_{1N}\) : nominel spænding på primærsiden i \(V\) <br>
+                          \(I_{1N}\) : nominel strøm på primærsiden i \(A\) <br>
+                          \(U_{2N}\) : nominel spænding på sekundærsiden i \(V\) <br>
+                          \(I_{2N}\) : nominel strøm på sekundærsiden i \(A\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$S_N = U_{1N} \cdot I_{1N} = U_{2N} \cdot I_{2N}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Fuldlaststrøm</h2>
+                        <p>
+                  
+                          \(I_{1_{1/1}}\) : fuldlaststrømmen regnet på primærsiden i \(A\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$I_{1_{1/1}} = \frac{S_N}{\sqrt 3 \cdot U_{1N}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Den procentiske kortlutningsspænding</h2>
+                        <p>
+                    
+                          \(e_K\) : <span class="tooltip">den procentiske kortslutningspænding<span class="tooltiptext">findes ofte ved tabelopslag, men kan også efterprøves eksperimentielt</span></span> <br>
+                          \(U_{1K}\) : <span class="tooltip">kortslutningspænding<span class="tooltiptext">den spænding hvor en kortslutning vil medføre en strøm der svare til fuldlaststrømmen</span></span> på primærsiden i \(V\)
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$e_K = \frac{U_{1K}}{U_{1N}} \cdot 100$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Transformer impedans</h2>
+                        <p>
+                    
+                          \(Z_T\) : <span class="tooltip">transformerens impedans<span class="tooltiptext">alt efter hvilken side der betragtes blive denne forskellig med forholdet \(n^2\)</span></span> i \(\Omega\) <br>
+                          \(U_N\) : nominel spænding på den betragtede side af transformeren i \(V\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$Z_T = \frac{e_K \cdot U_N^2}{100 \cdot S_N}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Transformerimpedansens vinkel (polær notation)</h2>
+                        <p>
+                    
+                          \(\varphi_K\) : vinklen på tranformerens impedans i \(^o\) <br>
+                          \(P_{LL}\) : <span class="tooltip">strømvarmetabet<span class="tooltiptext">varmetabet i transformerens vindinger ved fuldlast - findes ofte ved tabelopslag</span></span> i \(W\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\varphi_K = cos^{-1} (\frac{100 \cdot P_{LL}}{e_K \cdot S_N})$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>En transformers virkningsgrad</h2>
+                        <p>
+                    
+                          \(\eta\) :  transformerens virkningsgrad <br>
+                          \(m\) : transformerens <span class="tooltip">belastningsgrad<span class="tooltiptext">udregnes som forholdet mellem fuldlast og den aktuelle belastning</span></span> <br>
+                          \(P_{NLL}\) : No-Load-Loss i \(W\) <br>
+                          \(\varphi_B\) : belastningstrømmens faseforskydningsvinkel i \(^o\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\eta = \frac{P_2}{P_2 + P_{tab}} = \frac{m \cdot S_N \cdot cos\varphi_B}{m \cdot S_N \cdot cos\varphi_B \cdot P_{NLL} \cdot m^2 \cdot P_{LL}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>En transformers spændingsfald</h2>
+                        <p>
+                    
+                          \(\Delta U_{2f}\) :  transformerens spændingsfald på fase niveau på sekundærsiden i \(V\) <br>
+                          \(I_B\) : den aktuelle belastning i \(A\)<br>
+                          \(R_2\) : transformerens resistans på sekundærsiden i \(\Omega\) <br>
+                          \(X_2\) : transformerens reaktans på sekundærsiden i \(\Omega\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\Delta U_{2f} = I_B \cdot (R_2 \cdot cos\varphi_B + X_2 \cdot sin\varphi_B)$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Lastfordeling af parallelforbundne transformere</h2>
+                        <p>
+                    
+                          \(e_{KA}\) : den procentiske kortslutningspænding for transformer A <br>
+                          \(S_A\) : den aktuelle belastning for transformer A i \(KVA\) <br>
+                          \(S_NA\) : ydeevnen for transformer A i \(KVA\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\frac{e_{KA} \cdot S_A}{S_{NA}} = \frac{e_{KB} \cdot S_B}{S_{NB}}$$ </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

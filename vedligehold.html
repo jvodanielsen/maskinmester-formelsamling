@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Vedligehold</h1>
+                    <div class="text">
+                      <p class="headertext">Der er i faglige kredse ikke en fuldstændig objektiv enighed om hvordan vedligeholdsberegninger skal udregnes, og hvad der menes med de forskellige fagtermer. Nedenstående er den mest simple og efter min mening korrekte metode.</p>
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Availability (A)</h2>
+                          <p>
+                            \(A \) : udstyrets tilgængelighed i \(\%\) af den totale produktionstid <br>
+                            \(totaltid \) : den totale tid der er afsat til at producere emner (planlagt produktionstid) <br>
+                            \(nedetid \) : den tid hvor udstyret ikke producere emner i løbet af den planlagte produktionstid <br>
+                          </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$A = \frac{totaltid - nedetid}{totaltid} = \frac{oppetid}{totaltid}$$ </p>
+                          
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Efficiency (E)</h2>
+                          <p>
+                    
+                            \(E \) : udstyrets driftseffektivitet i \(\%\) af den teoretiske forventede effektivitet <br>
+                            \(takttid \) : den tid det forventes at det tager (teoretisk) at producere 1 emne med udstyret i \(\frac{s}{emne}\) <br>
+                            \(antal \ producerede \ emner \) : det antal emner der er rent faktisk er produceret i løbet af den totale produktionstid <br>
+                            \(total \ produktionstid \) : den tid der er planlagt til produktion, også kaldet "totaltid" eller "planlagt produktionstid" <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$E = \frac{takttid \cdot antal \ producerede \ emner}{total \ produktionstid}$$ </p>
+                          
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Quality (Q)</h2>
+                          <p>
+                    
+                            \(Q \) : udstyrets kvalitetsfaktor i \(\%\) af alle emner produceret <br>
+                            \(antal \ producerede \ emner \) : det virkelige, ikke teoretiske, antal emner produceret i løbet af den planlagte produktionstid <br>
+                            \(defekte \ emner \) : emner der viser sig at være defekte <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$Q = \frac{antal \ producerede \ emner - defekte \ emner}{antal \ producerede \ emner}$$ </p>
+                          
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Total udstyrseffektivitet OEE</h2>
+                          <p>
+                    
+                            \(OEE \) : <span class="tooltip">total udstyrseffektivitet<span class="tooltiptext">et tal der beskriver den samlede effektivitet af udstyr og maskiner i en produktionsproces</span></span> (OEE-tallet) <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$OEE = A \cdot E \cdot Q$$ </p>
+                          
+                        </div>
+                      </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                   </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

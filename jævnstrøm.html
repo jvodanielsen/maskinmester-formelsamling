@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Jævnstrøm</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Klemspænding</h2>
+                        <p>
+                  
+                          \(U_{kl}\) : <span class="tooltip">klemspændingen<span class="tooltiptext">den spænding man måler hvis man satte et voltmeter på batteriets klemmer</span></span> i \(V\) <br>
+                          \(\epsilon\) : den elektromotoriske kraft i \(V\) <br>
+                          \(I\) : strømmen i \(A\) <br>
+                          \(r_i\) : den indre resistans i batteriet i \(\Omega\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$U_{kl} = \epsilon - I \cdot r_i $$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Kirchoffs 2. lov</h2>
+                        <p>
+                  
+                          formulering af <span class="tooltip">Kirchoffs anden lov<span class="tooltiptext">"I en lukket kreds er summen af de elektromotoriske kræfter og spændingsfald lig med nul"</span></span> <br>
+                            </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\Sigma \epsilon + \Sigma (R \cdot I) = 0$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Kirchoffs 1. lov</h2>
+                        <p>
+                    
+                          formulering af <span class="tooltip">Kirchoffs første lov<span class="tooltiptext">"summen af strømmende, rgenet med fortegn, i et knudepunkt er lig med nul"</span></span> <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\Sigma I = 0$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Spændingsdelingsligningen for serieforbundne resistanser</h2>
+                        <p>
+                          \(U_{R_1}\) : spændingsfaldet over \(R_1\) i \(V\) <br>
+                          \(U_{R_2}\) : spændingsfaldet over \(R_2 i\) \(V\) <br>
+                          \(R_1\) : resistans i første modstand i \(\Omega\) <br>
+                          \(R_2\) : resistans i anden modstand i \(\Omega\) <br>
+                          \(U\) : det samlede spændingsfald i \(V\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$U_{R_1} = U \cdot \frac{R_1}{R_1 + R_2}$$
+                          $$U_{R_2} = U \cdot \frac{R_2}{R_1 + R_2}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Strømdelingsligningen for parallelforbundne resistanser</h2>
+                        <p>
+                          \(I_{R_1}\) : strømmen igennem \(R_1\) i \(A\) <br>
+                          \(I_{R_2}\) : strømmen igennem \(R_2\) i \(A\) <br>
+                          \(R_1\) : resistans i første modstand i \(\Omega\) <br>
+                          \(R_2\) : resistans i anden modstand i \(\Omega\) <br>
+                          \(I\) : den samlede strøm i \(A\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$I_{R_1} = I \cdot \frac{R_2}{R_1 + R_2}$$
+                          $$I_{R_2} = I \cdot \frac{R_1}{R_1 + R_2}$$ </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

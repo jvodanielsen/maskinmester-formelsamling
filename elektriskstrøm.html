@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Elektrisk strøm</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Ohms lov </h2>
+                        <p>
+                          \(U\) : elektrisk spænding i \(V\) <br>
+                          \(R\) : elektrisk modstand i \(\Omega\) <br>
+                          \(I\) : elektrisk strøm i \(A\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$U = R \cdot I$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Effektligninger</h2>
+                      </div>
+                      <div class="column right">
+                        <p> $$P = U \cdot I = R \cdot I^2 = \frac{U^2}{R}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Resistans</h2>
+                        <p>
+                    
+                          \(\rho\) : resistivitet i enheden \(\frac{\Omega}{m}\) eller ofte angivet som \(\frac{m\Omega \cdot mm^2}{m}\)<br>
+                          \(l\) : længde af leder i \(m\) <br>
+                          \(S\) : tværsnit af leder i \(m^2\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$R = \rho \cdot \frac{l}{S}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Coulombs lov</h2>
+                        <p>
+                          \(F\) : kraft i \(N\) <br>
+                          \(Q_1\) : elektrisk punktladning i \(C\) <br>
+                          \(Q_2\) : en anden elektrisk punktladning i \(C\) <br>
+                          \(\epsilon_0\) : den elektriske permittivitet i vakuum \(8,85 \cdot 10^{-12}\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$F = \frac{Q_1 \cdot Q_2}{4 \cdot \pi \cdot \epsilon_0 \cdot r^2}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Dielektricitetskonstant</h2>
+                        <p>
+                          \(\epsilon\) : dielektricitetskonstant gennem et bestemt stof <br>
+                          \(\epsilon_r\) : den relative permittivitet for stoffet <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\epsilon = \epsilon_0 \cdot \epsilon_r$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Elektrisk feltstyrke</h2>
+                        <p>
+                          \(E\) : Elektrisk feltstyrke i \(\frac{N}{C}=\frac{V}{m}\)  <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$E = \frac{Q_1}{4 \cdot \pi \cdot \epsilon_0 \cdot r^2}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Elektrisk flux</h2>
+                        <p>
+                          \(\psi\) : elektrisk flux i \(V \cdot m\) <br>
+                          \(A\) : tværsnitsareal i \(m^2\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$\psi = E \cdot A = \frac{Q}{\epsilon_0}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Elektromotorisk kraft</h2>
+                        <p>
+                          \(emk\) : den elektromotoriske kraft i \(V\) <br>
+                          \(E\) : elektrisk feltstyrke i \(\frac{N}{C}\) <br>
+                          \(s\) : strækning i \(m\) <br>
+                          \(W\) : arbejde i \(J\) <br>
+                          \(Q\) : elektrisk ladning i \(C\)
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$emk = E \cdot s = \frac{W}{Q}$$ </p>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

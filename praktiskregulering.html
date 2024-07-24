@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Praktisk regulering</h1>
+                    <div class="text">
+                    <p class="headertext">Der er mange metoder til regulering, men de to nedenfor (Ziegler-Nichols og Lambda) er dem jeg har fundet mest brugbare. Derudover skal det nævnes
+                      at regulering har mange usikkerheder og forstyrelser, og derfor ikke kan siges at være en eksakt videnskab. Nogle gange kan det være bedre blot at prøve sig frem,
+                    men nedenstående metoder er et godt sted at starte, hvis man ikke har erfaring med regulering.</p>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Lambda-metoden (PI)</h2>
+                        <p>
+                    
+                          \(K_p \) : P-leddet af reguleringen (proportionalforstærkning) <br>
+                          \(Tau\) : Tau-tiden den tid der kan siges at gå mellem reguleringens start, og til man betragter setpunktet som nået i \(s\) <span class="tooltip">note<span class="tooltiptext">beregningen af Tau-tiden er lidt mere kompliceret end denne løse forklaring</span></span> <br>
+                          \(\lambda \) : for en åben sløjfe regulering er \(\lambda\) det samme som Tau <br>
+                          \(\tau_0 \) : <span class="tooltip">dødtiden<span class="tooltiptext">den tid der går fra at setpunkt ændres til at man kan se en ændring af procesværdien</span></span> i \(s\) <br>
+                          
+                          \(K_i \) : I-leddet af reguleringen (integralvirkning) <br>
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$K_p = \frac{Tau}{K_{proces} \cdot (\lambda + \tau_0)}$$ $$K_i = \frac{K_p}{Tau}$$</p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Ziegler-Nichols metode (PID)</h2>
+                        <p>
+                    
+                          \(SM \) : <span class="tooltip">Stability Margin<span class="tooltiptext">sættes mellem 1-3 alt efter hvor stabil en regulering der kræves, 1 er hurtig og ustabil, mens 3 er langsom og stabil</span></span> <br>
+                          \(K_{proces} \) : <span class="tooltip">anlæggets forstærkning<span class="tooltiptext">beregnes ved at tegne en statisk karakteritik og aflæse hældningen</span></span>  <br>
+                          \(K_d \) : D-leddet af reguleringen (differentialtid)
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$K_p = \frac{1,2}{SM \cdot K_{proces}} \cdot \frac{Tau}{\tau_0}$$ $$K_i = \frac{1}{2 \cdot \tau_0}$$
+                          $$K_d = 0,5 \cdot \tau_0$$ </p>
+                      </div>
+                    </div>
+
+                    <h2 class="headertext">Anbefalet reguleringstype ved åben sløjfe regulering</h2>
+                    <p class="headertext">Nedenstående er nogle anbefalinger til hvilken reguleringsmetode der passer bedst i en given situation</p>
+                    <p>
+
+                    <div class="row">
+                      <div class="column left">
+                        <p>
+                          \(R > 10 \) : P <br>
+                          \(7,5 &lt R &lt 10\) : PI <br>
+                          \(3 &lt R &lt 7,5\) : PID <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$R = \frac{Tau}{\tau_0}$$ </p>
+                      </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                   </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

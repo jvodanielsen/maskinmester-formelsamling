@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Vekselstrøm</h1>
+                  <div class="text">
+                    <p class="headertext">Vekselstrøm er det man ofte ser ude på elnettet og i høj- og lavspændingsinstallationer der forsyner maskiner der kræver stor effekt. </p>
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Effektivværdier </h2>
+                          <p>
+                            \(I_{eff}\) : strømmens effektive værdi i \(A\) <br>
+                            \(I_{max}\) : strømmens maksimale værdi (toppunkt) på sinuskurven i \(A\) <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$I_{eff} = \frac{I_{max}}{\sqrt 2}$$
+                            $$U_{eff} = \frac{U_{max}}{\sqrt 2}$$ </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Kapacitiv reaktans (to-piger-fra-ceres formlen)</h2>
+                          <p>
+                            \(X_C\) : kapacitiv reaktans i \(\Omega\) <br>
+                            \(f\) : frekvens i \(Hz\) <br>
+                            \(C\) : kapacitans i \(C\) <br>
+                          </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$X_C = \frac{1}{2 \cdot \pi \cdot f \cdot C}$$ </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Induktiv reaktans</h2>
+                          <p>
+                  
+                            \(X_L\) : kapacitiv reaktans i \(\Omega\) <br>
+                            \(f\) : frekvens i \(Hz\) <br>
+                            \(L\) : induktans i \(H\) <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$X_L = 2 \cdot \pi \cdot f \cdot L$$ </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Øjebliksværdier</h2>
+                          <p>
+                    
+                            \(u\) : spændingens øjebliksværdi i \(V\) <br>
+                            \(\omega\) : vinkelhastigheden for sinuskurven (udregnes som \(2 \cdot \pi \cdot f\))<br>
+                            \(t\) : tiden i \(s\) <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$u = U_{max} \cdot sin(\omega \cdot t)$$
+                            $$i = I_{max} \cdot sin(\omega \cdot t)$$ </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Net- og fasespænding "maskinmesterkonstanten"</h2>
+                          <p>
+                    
+                            \(U_{n}\) : spændingen på netniveau i \(V\) <br>
+                            \(U_{f}\) : spændingen på faseniveau i \(V\) <br>
+                            </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$U_{n} = \sqrt 3 \cdot U_{f}$$ </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column left">
+                          <h2>Optaget effekt i symmetrisk 3 fasede belastninger</h2>
+                          <p>
+                            \(S\) : den tilsynladende effekt (hele ølglasset) i \(VA\) <br>
+                            \(P\) : virkeeffekten (øllen i ølglasset) i \(W\) <br>
+                            \(Q\) : den reaktive effekt (skummet i ølglasset) i \(VAR\) <br>
+                          </p>
+                        </div>
+                        <div class="column right">
+                          <p> $$S = \sqrt 3 \cdot U_n \cdot I_n$$
+                            $$P = \sqrt 3 \cdot U_n \cdot I_n \cdot cos(\varphi)$$
+                            $$Q = \sqrt 3 \cdot U_n \cdot I_n \cdot sin(\varphi)$$ </p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

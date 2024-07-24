@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+        <title>Maskinmester Formelsamling - Asynkronmotoren</title>
+        <link rel="stylesheet" href="../css/global.css"> <!--link til css-fil i css mappen-->
+    </head>
+
+    <body>
+
+            <!--header-->
+ 
+            <div class="topnav" id="myTopnav">
+              
+              <a href="../index.html" class="active"><img src="../images/logo.png" alt=""></a>
+              
+              <div class="dropdown">
+                <button class="dropbtn">Proces og Automation</button>
+                <div class="dropdown-content">
+                  <a href="../pa/praktiskregulering.html">Praktisk regulering</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Management</button>
+                <div class="dropdown-content">
+                  <a href="../mn/vedligehold.html">Vedligehold</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Elektriske anlæg</button>
+                <div class="dropdown-content">
+                  <a href="../el/elektriskstrøm.html">Elektrisk strøm</a>
+                  <a href="../el/magnetisme.html">Magnetisme</a>
+                  <a href="../el/jævnstrøm.html">Jævnstrøm</a>
+                  <a href="../el/vekselstrøm.html">Vekselstrøm</a>
+                  <a href="../el/transformere.html">Transformere</a>
+                  <a href="../el/asynkronmotoren.html">Asynkronmotoren</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Termiske maskiner</button>
+                <div class="dropdown-content">
+                  <a href="../tm/mekanik.html">Mekanik og fluiddynamik</a>
+                  <a href="../tm/termodynamik.html">Termodynamik</a>
+                  <a href="../tm/forbrændingsmotorer.html">Forbrændingsmotorer</a>
+                  <a href="../tm/pumpeteknik.html">Pumpeteknik</a>
+                  <a href="../tm/køleteknik.html">Køleteknik</a>
+                  <a href="../tm/gasturbinen.html">Gasturbinen</a>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div> 
+
+            <script>
+              /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+            </script>
+            
+            <div class="content">
+              <h1>Asynkronmotoren</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                        <h2>En asynkronmotors drejefelt</h2>
+                        <p>
+                          \(f\) : frekvens i \(Hz\) <br>
+                          \(n_o\) : drejefeltets rotationshastighede (det synkrone omløbstal) i \(\frac{omd}{min}\) <br>
+                          \(p\) : <span class="tooltip">polpar<span class="tooltiptext">et polpar består af en nordpol og en sydpol</span></span> <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$n_0 = \frac{f \cdot 60}{p}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Slip (omløbstal)</h2>
+                        <p>
+                          \(n_s\) : slip i \(\frac{omd}{min}\) <br>
+                          \(n\) : motorens (akslens) omdrejningshastighed i \(\frac{omd}{min}\) <br>
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$n_s = n_o -n$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Slip (procent)</h2>
+                        <p>
+                          \(s\) : slip i \(\%\) <br>
+                            </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$s = \frac{n_0-n}{n_0} \cdot 100%$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Slip (decimaltal)</h2>
+                        <p>
+                    
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$s = \frac{n_0-n}{n_0} = \frac{n_s}{n_0}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Momentformel</h2>
+                        <p>
+                          \(M\) : moment i \(Nm\) <br>
+                          \(P\) : afgivne mekaniske effekt i \(W\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$M = \frac{9,55 \cdot P}{n}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Asynkronmotorens optagne effekt</h2>
+                        <p>
+                    
+                          \(P_{1N}\) : den optagne effekt ved nominel belastning <br>
+                          \(U_N\) : den nominelle netspænding i \(V\) <br>
+                          \(I_N\) : den nominelle fuldlaststrøm i \(A\) <br>
+                          \(\varphi\) : faseforskydningsvinkel mellem fasespænding og fuldlaststrøm i \(^o\) <br>
+                        </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$P_{1N} = \sqrt 3 \cdot U_N \cdot I_N \cdot cos\varphi$$ </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

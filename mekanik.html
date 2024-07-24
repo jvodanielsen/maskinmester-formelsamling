@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Mekanik og fluiddynamik</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Newtons 2. lov </h2>
+                        <p>
+                          \(F\) : kraft i \(N\)
+                          <br> \(m\) : masse i \(kg\)
+                          <br> \(a\) : acceleration i \(\frac{m}{s^2}\) <br>
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$F = m \cdot a$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Arbejde</h2>
+                        <p>
+                          \(W\) : arbejdet i \(J\)
+                          <br> s : strækning i \(m\) <br>
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$W=F \cdot s$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Effekt</h2>
+                        <p>
+                          \(P\) : effekten i \(\frac{J}{s} = W\)
+                          <br> \(t\) : tiden i \(s\) <br>
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$P=\frac{W}{t}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Virkningsgrad</h2>
+                        <p>
+                          \(nyttigt \ arbejde\) : det arbejde maskinen har til formål at udføre i \(W\)
+                          <br>
+                          \(tilført \ effekt\) : den effekt der tilføres maskinen i \(W\)
+                          <br>
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\eta=\frac{nyttigt \ arbejde}{tilført \ effekt}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Vinkel hastighed (omdrejning)</h2>
+                        <p>
+                  
+                          \(\omega\) : vinkelhastighed i \(\frac{rad}{s}\)
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\omega = \frac{2 \cdot \pi}{t}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Centripetalacceleration</h2>
+                        <p>
+                  
+                          \(r\) : radius i \(m\)
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$a_c = r \cdot \omega^2$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Friktion</h2>
+                        <p>
+                          \(\mu\) : gnidningskoefficienten 
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$F_g = \mu \cdot F_N$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Inertimoment</h2>
+                        <p>
+                          \(I\) : inertimoment i \(kg \cdot m^2\)
+                          <br> \(M\) : moment i cirkelbevægelsen i \(N \cdot m\)
+                          <br> \(\alpha\) : vinkelacceleration i \(\frac{rad}{s^2}\)
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$I = \frac{M}{\alpha}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>En cylinders inertimoment</h2>
+                        <p>
+                          \(m\) : cylinderens masse i \(kg\)
+                          <br> \(R\) : cylinderens radius i \(m\) 
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$I_{cyl} = \frac{1}{2} \cdot m \cdot R^2$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>En hul cylinders inertimoment</h2>
+                        <p>
+                          \(I_{rør}\) : rørets inertimoment ved en omdrejning om sin egen akse i \(kg \cdot m^2\)
+                          <br>
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$I_{rør} = \frac{1}{2} \cdot m \cdot \left( R_{ydre}^2 - R_{indre}^2 \right)$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Bjælkers bøjningsspænding</h2>
+                        <p>
+                          \(\sigma_{maks}\) : bjælkens maksimale bøjningsspænding i \(\frac{N}{mm^2}\)
+                          <br> \(M_{bøj}\) : det aktuelle bøjningsmoment i \(\frac{N}{mm}\)
+                          <br> \(W_y\) : modstandsmomentet ve opslag i \(mm^3\)
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\sigma_{maks} =\frac{M_{bøj}}{W_y}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Kontinuitetsligningen</h2>
+                        <p>
+                          \(v_1\) : væskens hastighed ved punkt 1 i \(\frac{m}{s}\)
+                          <br> \(A_1\) : væskestrømmens tværsnitareal ved punkt 1 i \(m^2\)
+                          <br> \(v_2\) : væskens hastighed ved punkt 2
+                          <br> \(A_2\) : væskestrømmens tværsnitareal ved punkt 2
+                          </p>
+                      </div>
+                      <div class="column right">
+                        <p> $$v_1 \cdot A_1 = v_2 \cdot A_2$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Bernoullis ligning</h2>
+                        <p>
+                          \(p\) : trykket i \(pa\)
+                          <br> \(\rho\) : densiteten i \(\frac{kg}{m^3}\)
+                          <br> \(g\) : tyngdeacceleration i \(\frac{m}{s^2}\)
+                          <br> \(h\) : højden i \(m\)
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$p + \frac{1}{2} \cdot \rho \cdot v^2 + \rho \cdot g \cdot h =konstant$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Reynolds tal</h2>
+                        <p>
+                          \(h_i\) : hydraulisk diameter i \(m\) 
+                          <br> \(\nu\) : kinematisk viskositet stofkonstant i \(\frac{m^2}{s}\)
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$Re = \frac{c \cdot h_i}{\nu}$$ </p>
+                      </div>
+                    </div>
+                  
+                  
+                  
+                  
+                  
+                  
+          
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+            </div>
+            
+        
+    </body>
+
+</html>

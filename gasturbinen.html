@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Gasturbinen</h1>
+                  <div class="text">
+                      
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Isentropisk virkningsgrad gennem kompressoren</h2>
+                        <p>
+                  
+                          \(T_{2,is}\) : temperatur efter kompressor i en isentropisk proces <br>
+                          \(T_1\) : temperatur før kompressor (indsugning) <br>
+                          \(T_2\) : aktuelle temperatur eftr kompressor <br>
+                          \(h_{2,is}\) : entalpi efter kompressor i en isentropisk proces
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\eta_{is-komp}=\frac{T_{2,is}-T_1}{T_2-T_1}=\frac{h_{2,is}-h_1}{h_2-h_1}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Isentropisk virkningsgrad gennem turbinen</h2>
+                        <p>
+                  
+                          \(T_{4,is}\) : temperatur efter turbine i en isentropisk proces <br>
+                          \(T_3\) : temperatur før turbine (efter forbrænding) <br>
+                          \(T_4\) : aktuelle temperatur efter turbine (udstødning) <br>
+                          \(h_{4,is}\) : entalpi efter turbine i en isentropisk proces
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\eta_{is-turb}=\frac{T_3-T_4}{T_3-T_{4,is}}=\frac{h_3-h_4}{h_3-h_{4,is}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Den isentropiske proces</h2>
+                        <p>
+                          \(p_1\) : trykket inden kompressor (atmosfæretryk) i \(pa\)
+                          <br> \(p_2\) : trykket efter kompressor i \(pa\)
+                          <br> \(\kappa\) : isentropkoefficienten 
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\frac{T_{2,is}}{T_1}={\left( \frac{p_2}{p_1} \right)}^{\frac{\kappa-1}{\kappa}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Arbejdsforhold</h2>
+                        <p>
+                  
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$r_i = \frac{P_{aksel}}{P_{turbine}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Termisk virkningsgrad</h2>
+                        <p>
+                  
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\eta_t = 1-\frac{T_1}{T_2}=1-{\left( \frac{p_2}{p_1} \right)}^{\frac{\kappa-1}{\kappa}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Koblingseffekt</h2>
+                        <p>
+                  
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$P_{kobling} = P_{aksel} - P_{kompressor}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Luftoverskudskoefficient</h2>
+                        <p>
+                  
+                          \(\dot{m_L}\) : luftens masseflow i \(\frac{kg}{s}\) <br>
+                          \(\dot{m_b}\) : brændstoftilførsel i \(\frac{kg}{s}\) <br>
+                          \(\dot{L_{min}}\) : den minimale luftmængde til forbrædningen i \(\frac{kg \ luft}{kg \ brændstof}\) 
+                          </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$\lambda=\frac{\dot{m_{L}}}{\dot{m_b} \cdot L_{min}}$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Indre effekt (turbine)</h2>
+                        <p>
+                          \(c_p\) = luftens varmekoefficient
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$P_{34}=\dot{m_L} \cdot c_p \cdot (T_3-T_4)=\dot{m_L} \cdot (h_3-h_4)$$ </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="column left">
+                        <h2>Når den indre effekt optimeres</h2>
+                        <p>
+                  
+                        </p>
+                        
+                      </div>
+                      <div class="column right">
+                        <p> $$T_2 = \sqrt{T_1 \cdot T_3}$$
+                          $$T_2 = T_4$$ </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>

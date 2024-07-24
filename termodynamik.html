@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" id="MathJax-script" async
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>Maskinmester Formelsamling</title>
+<link rel="stylesheet" href="global.css"> <!--link til css-fil i css mappen-->
+</head>
+
+<body>
+
+    <!--header-->
+
+    <div class="topnav" id="myTopnav">
+      
+      <a href="index.html" class="active"><img src="logo.png" alt=""></a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Proces og Automation</button>
+        <div class="dropdown-content">
+          <a href="praktiskregulering.html">Praktisk regulering</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Management</button>
+        <div class="dropdown-content">
+          <a href="vedligehold.html">Vedligehold</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Elektriske anlæg</button>
+        <div class="dropdown-content">
+          <a href="elektriskstrøm.html">Elektrisk strøm</a>
+          <a href="magnetisme.html">Magnetisme</a>
+          <a href="jævnstrøm.html">Jævnstrøm</a>
+          <a href="vekselstrøm.html">Vekselstrøm</a>
+          <a href="transformere.html">Transformere</a>
+          <a href="asynkronmotoren.html">Asynkronmotoren</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Termiske maskiner</button>
+        <div class="dropdown-content">
+          <a href="mekanik.html">Mekanik og fluiddynamik</a>
+          <a href="termodynamik.html">Termodynamik</a>
+          <a href="forbrændingsmotorer.html">Forbrændingsmotorer</a>
+          <a href="pumpeteknik.html">Pumpeteknik</a>
+          <a href="køleteknik.html">Køleteknik</a>
+          <a href="gasturbinen.html">Gasturbinen</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+} 
+    </script>
+            
+            <div class="content">
+              <h1>Termodynamik</h1>
+                  <div class="text">
+                    <div class="row">
+                      <div class="column left">
+                  <h2>Varmeeffekt "maskinmesterens formel nr. 1"</h2>
+                  <p>
+                    \(Q\) : varmeeffekt i \(kJ\) <br>
+                    \(\dot{m}\) : masseflow i \(\frac{kg}{s}\) <br>
+                    \(c\) : varmekapacitet i \(\frac{kJ}{kg \cdot K}\) <br>
+                    \(\Delta T\) : temperaturforskel i \(K\) eller \(^oC\) <br>
+                    \(\Delta h\) : entalpiforskel i \(\frac{kJ}{kg}\) <br>
+                    </p>
+                  
+                      </div>
+                      <div class="column right">
+                        <p>
+                          $$Q=\dot{m} \cdot c \cdot \Delta T = \dot{m} \cdot \Delta h$$
+                          </p>
+                    </div>
+                      </div>
+
+              <div class="row">
+                <div class="column left">
+                  <h2>Idealgasligningen</h2>
+                  <p>
+                    \(p\) : tryk i \(pa\) <br>
+                    \(V\) : volumen i \(m^3\) <br>
+                    \(m\) : masse i \(kg\) <br>
+                    \(R_i\) gaskonstant i enheden \(\frac{pa \cdot m^3}{kg \cdot K}\) <br>
+                    \(T\) : temperatur i \(K\) 
+                    </p>
+                  
+                </div>
+                <div class="column right">
+                  <p> $$p \cdot V = m \cdot R_i \cdot T$$ </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column left">
+                  <h2>U-værdi</h2>
+                  <p>
+                    \(U\) : varmegennemgangstallet (transmissionskoefficienten) i \(\frac{W}{m^2 \cdot K}\)
+                    <br> \(A\) : det varmevekslende overfladeareal i \(m^2\)
+                    <br> \(\Delta t\) : temperaturdifferens ved varmetransmissionen i \(K\) 
+                    <br> ved beregninger på varmevekslere benyttes den logaritmiske temperaturdifferens (\(LMTD\) eller \(\Delta tm\)) istedet for \(\Delta t\) 
+                  </p>
+                  
+                </div>
+                <div class="column right">
+                  <p> $$U=A \cdot \phi \cdot \Delta t$$ </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column left">
+                  <h2>Isentropisk virkningsgrad gennem en dampturbine</h2>
+                  <p>
+                    \(h_{2,is}\) : entalpi af damp efter turbine i en isentropisk proces <br>
+                    \(h_1\) : entalpi af damp før turbine  <br>
+                    \(h_2\) : aktuelle entalpi af damp efter turbine  <br>
+                  </p>
+                  
+                </div>
+                <div class="column right">
+                  <p> $$\eta_{is,i} = \frac{h_1 - h_2}{h_1 - h_{2,is}}$$ </p>
+                </div>
+              </div>
+                </div>
+              </div>
+          
+            <!--sidefod-->
+            
+            <div class="footer">
+              Jens Danielsen &bull; 2024 &bull; jvodanielsen@gmail.com</small>
+          </div>
+            
+        
+    </body>
+
+</html>
