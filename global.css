@@ -1,0 +1,312 @@
+* {margin: 0px; padding: 0px;}
+
+html{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {margin:0;}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #00adef;
+  width: 100%; /* Full width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 255, 0.2);
+}
+
+
+.active {
+  background-color: #00adef;
+  color: white;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.active img {
+  height: 46px;
+  vertical-align: middle;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1em;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 22.45px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.dropdown-content a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding: 11.7px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.content {
+  width: 75%;
+  margin: 25px auto;
+  background-color: white;
+}
+
+.content h1 {
+  color: #00adef;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.content .mainheader {
+  color: #00adef;
+  margin: 45px auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.content .containerheader {
+  font-weight: 800;
+  font-size: 3em;
+  margin: 45px auto;
+}
+
+.content p {
+  font-size: 1em;
+  clear: both;
+  font-weight: 350;
+  color: rgb(52, 52, 52);
+  text-align: center;
+}
+
+.content .text p {
+  margin: 0px auto;
+  width: 100%;
+  text-align: left;
+  line-height: 1.75;
+}
+
+.content h2 {
+  color: #00adef;
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.25em;
+  max-width: 100%;
+  word-wrap: break-word; /* Wrap text to stay inside the box */
+  margin-bottom: 20px;
+}
+
+.content .mainsubheader {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 25px auto;
+}
+
+hr {
+  border: 0;
+  height: 1.5px;
+  background: #00adef;
+  margin: 25px auto;
+}
+
+.content .text .headertext {
+  margin: 20px auto;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+
+
+.column {
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  position: relative;
+  width: 22%; /* Four images side by side with some spacing */
+  margin: 10px;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4em;
+  font-weight: 600;
+  pointer-events: none; /* Prevents the text from blocking the link */
+  max-width: 90%;
+  word-wrap: break-word; /* Wrap text to stay inside the box */
+  padding: 10px;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .item {
+    width: 100%; /* One image per row */
+  }
+  .content .text p {
+    text-align: center;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #00adef;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #00adef;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -60px; /* Use margin to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  clear: both;
+  color: #00adef;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer small {
+  text-align: center; 
+  font-weight: 600;
+}
